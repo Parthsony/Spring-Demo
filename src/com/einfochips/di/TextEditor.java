@@ -1,12 +1,14 @@
 package com.einfochips.di;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class TextEditor {
 
+	@Autowired
 	private SpellChecker spellCheker;
 
-	public TextEditor(SpellChecker spellChecker) {
+	public TextEditor() {
 		System.out.println("Inside Text Editor Constructor");
-		this.spellCheker = spellChecker;
 	}
 
 	public void spellCheck() {
